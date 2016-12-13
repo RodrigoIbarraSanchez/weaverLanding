@@ -45,6 +45,7 @@
     color: ghostwhite;
     font-family: Roboto;
     font-size: 50px;
+    font-weight: bold;
 }
 
 .lineaTexto {
@@ -53,6 +54,7 @@
     font-size: 25px;
     line-height: 35px;
     padding-left: 15px;
+    font-weight: bold;
 }
 
 .btn-round-lg{
