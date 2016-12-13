@@ -27,7 +27,7 @@
 
     
 .headerBG {
-    background: url(https://s27.postimg.org/xp0hd3okz/Couple_background.jpg) no-repeat center center;
+    background: url(https://s27.postimg.org/xp0hd3okz/Couple_background.jpg) no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
