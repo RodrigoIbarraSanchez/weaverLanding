@@ -27,7 +27,7 @@
 
     
 .headerBG {
-    background: url(https://s27.postimg.org/xp0hd3okz/Couple_background.jpg) no-repeat center center fixed;
+    background: url(https://s27.postimg.org/xp0hd3okz/Couple_background.jpg) no-repeat center center;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,6 +41,7 @@
 
 .propuestaValor{
     margin-top: 40vh;
+    margin-bottom: 400px;
 }
 
 .pb{
@@ -89,4 +90,17 @@
     background-color: transparent;
     color: white;
     border: solid 1px white;
+}
+
+.segundaSeccion{
+    background: rgba(188,152,222,1);
+    background: -moz-linear-gradient(45deg, rgba(188,152,222,1) 0%, rgba(124,181,208,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(188,152,222,1)), color-stop(100%, rgba(124,181,208,1)));
+    background: -webkit-linear-gradient(45deg, rgba(188,152,222,1) 0%, rgba(124,181,208,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(188,152,222,1) 0%, rgba(124,181,208,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(188,152,222,1) 0%, rgba(124,181,208,1) 100%);
+    background: linear-gradient(45deg, rgba(188,152,222,1) 0%, rgba(124,181,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc98de', endColorstr='#7cb5d0', GradientType=1 );
+    width: 100%;
+    height: 50vh;
 }
