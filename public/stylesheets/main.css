@@ -144,4 +144,13 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding: 10px;
+}
+
+.tercerSección .titulo {
+    color: white;
+    padding-top: 40px;
+    font-family: 'Raleway';
+    font-size: 45px;
+    letter-spacing: 5px;
 }
