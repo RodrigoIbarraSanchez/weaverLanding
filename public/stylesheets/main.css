@@ -179,6 +179,10 @@
     color: darkgray;
 }
 
+.separacion {
+    height: 60px!important;
+}
+
 .centrado {
     text-align: center;
 }
