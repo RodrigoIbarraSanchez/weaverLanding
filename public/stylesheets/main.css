@@ -137,7 +137,7 @@
     font-family: "Beyond The Mountains";
 }
 
-.tercerSección {
+.tercerSeccion {
     background: url(https://s27.postimg.org/kelcxdko3/Couple.jpg) no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
@@ -147,10 +147,38 @@
     padding: 10px;
 }
 
-.tercerSección .titulo {
+.tercerSeccion .titulo {
     color: white;
     padding-top: 40px;
     font-family: 'Raleway';
     font-size: 45px;
     letter-spacing: 5px;
+}
+
+.cuartaSeccion {
+    background: white;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 10px;
+}
+
+.cuartaSeccion .titulo {
+    color: gray;
+    padding-top: 40px;
+    font-family: 'Raleway';
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+}
+
+.cuartaSeccion h3,h4 {
+    font-family: Roboto;
+    color: darkgray;
+}
+
+.centrado {
+    text-align: center;
 }
