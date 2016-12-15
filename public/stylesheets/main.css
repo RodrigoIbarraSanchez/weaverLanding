@@ -162,6 +162,7 @@
 .tercerSeccion h3 {
     color: white;
     font-family: Roboto;
+    padding-right: 15px;
 }
 
 div.bhoechie-tab-menu div.list-group>a.active, div.bhoechie-tab-menu div.list-group>a.active .glyphicon, div.bhoechie-tab-menu div.list-group>a.active .fa {
