@@ -288,6 +288,7 @@ div.bhoechie-tab-menu div.list-group>a {
     margin-bottom: 30px!important;
     text-align: left;
     font-weight: bold;
+    font-family: Raleway;
 }
 div.bhoechie-tab-menu{
     padding-right: 0;
@@ -369,6 +370,11 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .tercerSeccion .pasos {
     color: rgb(0,161,191);
 
+}
+
+.tercerSeccion h3 {
+    color: white;
+    font-family: Roboto;
 }
 
 .tercerSeccion .pasos:hover {
