@@ -155,6 +155,20 @@
     letter-spacing: 5px;
 }
 
+.tercerSeccion .pasos {
+    color: rgb(0,161,191);
+}
+
+.tercerSeccion h3 {
+    color: white;
+    font-family: Roboto;
+}
+
+div.bhoechie-tab-menu div.list-group>a.active, div.bhoechie-tab-menu div.list-group>a.active .glyphicon, div.bhoechie-tab-menu div.list-group>a.active .fa {
+    color: white;
+    text-decoration: underline;
+}
+
 .cuartaSeccion {
     background: white;
     height: 100vh;
@@ -364,18 +378,5 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 }
 
 .a.list-group-item:focus, h4.list-group-item:hover {
-    color: white;
-}
-
-.tercerSeccion .pasos {
-    color: rgb(0,161,191);
-}
-
-.tercerSeccion h3 {
-    color: white;
-    font-family: Roboto;
-}
-
-.tercerSeccion .pasos:hover {
     color: white;
 }
