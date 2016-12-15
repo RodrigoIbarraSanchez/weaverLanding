@@ -38,6 +38,62 @@
   <div class="tercerSeccion">
     <div class="container">
         <h1 class="titulo">¿Cómo funciona?</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active text-center">
+                                <h3 class="pasos">1. CONFECCIONA</h3>
+                            </a>
+                            <a href="#" class="list-group-item text-center">
+                                <h3 class="pasos">2. ARROJA</h3>
+                            </a>
+                            <a href="#" class="list-group-item text-center">
+                                <h3 class="pasos">3. TEJE</h3>
+                            </a>
+                            <a href="#" class="list-group-item text-center">
+                                <h3 class="pasos">4. CHAT</h3>
+                            </a>
+                            <a href="#" class="list-group-item text-center">
+                                <h3 class="pasos">5. CONECTA</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                        <!-- flight section -->
+                        <div class="bhoechie-tab-content active">
+                            <center>
+                                <h2 style="margin-top: 0;">Confecciona</h2>
+                            </center>
+                        </div>
+                        <!-- train section -->
+                        <div class="bhoechie-tab-content">
+                            <center>
+                                <h2 style="margin-top: 0;">Arroja</h2>
+                            </center>
+                        </div>
+
+                        <!-- hotel search -->
+                        <div class="bhoechie-tab-content">
+                            <center>
+                                <h2 style="margin-top: 0;">Teje</h2>
+                            </center>
+                        </div>
+                        <div class="bhoechie-tab-content">
+                            <center>
+                                <h2 style="margin-top: 0;">Chat</h2>
+                            </center>
+                        </div>
+                        <div class="bhoechie-tab-content">
+                            <center>
+                                <h2 style="margin-top: 0;">Conecta</h2>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
   <div class="cuartaSeccion">
@@ -144,6 +200,19 @@
           <a href="">CONTACT US</a>
       </div>
   </footer>
+
+  <script>
+      $(document).ready(function() {
+          $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+              e.preventDefault();
+              $(this).siblings('a.active').removeClass("active");
+              $(this).addClass("active");
+              var index = $(this).index();
+              $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+              $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+          });
+      });
+  </script>
 
 
 </body>
