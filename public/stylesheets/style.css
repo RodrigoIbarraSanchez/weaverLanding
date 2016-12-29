@@ -29,7 +29,6 @@ body {
 
 .btn-download {
     width: 280px;
-    margin-top: 20px;
     font-family: 'Roboto';
     background-color: rgb(0,161,191);
     color: white;
@@ -107,7 +106,7 @@ body {
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    margin: 5px;
+    margin: 40px 5px 0 5px;
     border: 1px solid rgb(245, 245, 245);
 }
 
@@ -119,7 +118,7 @@ body {
     border: 1px solid rgb(245, 245, 245);
     width: 20px;
     height: 20px;
-    margin: 5px;
+    margin: 40px 5px 0 5px;
 }
 
 .glyphicon-question-sign:before {
