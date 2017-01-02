@@ -394,3 +394,32 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     font-family: "Raleway";
     margin-top: 10px;
 }
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal input {
+    border-radius: 15px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+}
+
+.btnModal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background: transparent;
+    padding: 8px 15px;
+}
+
+.btnModalfocus {
+    outline:0px;
+}
