@@ -270,13 +270,17 @@
                   <div ng-controller="resultadosCtrl as resultados" ng-show="resultados.quizMetrics.resultadosActivos">
                       <div class="container">
                           <div class="row">
-                              <div class="col-xs-12">
-                                  <p>{{texto}}</p>
+                              <div class="col-xs-3" style="float: none; margin: 0 auto;">
+                                  <p class="mensaje">{{texto}}</p>
+                              </div>
+                              <div class="col-xs-6" style="float: none; margin: 0 auto;">
+                                  <p class="mensajeDos"><strong>Estás muy cerca de encontrar a la indicada.</strong></p>
                               </div>
                           </div>
-                          <div class="row">
+                          <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 200px;">COMENZAR A CONECTAR</button>
+                          <!--div class="row">
                               <button class="btn btn-primary btn.lg" ng-click="resultados.reset()">Regresar</button>
-                          </div>
+                          </div-->
                       </div>
                   </div>
               </div>

@@ -45,22 +45,22 @@
             function opcionUno(onSuccess) {
 
                 if (quizObj.numCorrect >= 5) {
-                    onSuccess("7 personas comparten los mismos gustos. Estás muy cerca de encontrar a la indicada.");
+                    onSuccess("7 personas comparten los mismos gustos.");
                 }
                 else if (quizObj.numCorrect >= 4) {
-                    onSuccess("Solo 8 personas piensan como tú! Estás muy cerca de encontrar a la indicada.");
+                    onSuccess("Solo 8 personas piensan como tú.");
                 }
                 else if (quizObj.numCorrect >= 3) {
-                    onSuccess("Existen 12 personas muy parecidas a ti. ¡Ahora te toca elegir a la correcta!.");
+                    onSuccess("Existen 12 personas muy parecidas a ti.");
                 }
                 else if (quizObj.numCorrect >= 2) {
-                    onSuccess("17 personas piensan muy similar a ti. Depende de ti elegir a la correcta.");
+                    onSuccess("17 personas piensan muy similar a ti.");
                 }
                 else if (quizObj.numCorrect >= 1) {
-                    onSuccess("Más de 20 personas piensan como tú. Depende de ti elegir a la correcta.");
+                    onSuccess("Más de 20 personas piensan como tú.");
                 }
                 else {
-                    onSuccess("Más de 54 personas piensan como tú. Depende de ti elegir a la correcta.");
+                    onSuccess("Más de 54 personas piensan como tú.");
                 }
 
             }

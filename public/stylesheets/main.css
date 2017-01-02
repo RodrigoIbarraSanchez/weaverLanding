@@ -380,3 +380,17 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .a.list-group-item:focus, h4.list-group-item:hover {
     color: white;
 }
+
+.mensaje {
+    font-size: 21px;
+    color: white;
+    font-family: "Raleway";
+    margin-top: 45px;
+}
+
+.mensajeDos {
+    font-size: 26px;
+    color: white;
+    font-family: "Raleway";
+    margin-top: 10px;
+}
