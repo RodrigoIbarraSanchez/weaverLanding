@@ -242,7 +242,7 @@ div.bhoechie-tab-menu div.list-group>a.active, div.bhoechie-tab-menu div.list-gr
 
 .btn-option:hover {
     background-color: rgb(0,161,191);
-    border: none;
+    border: solid 1px rgb(0,161,191);
 }
 
 .btn-download-demo {
