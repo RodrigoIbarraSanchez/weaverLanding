@@ -15,6 +15,9 @@
         _kms('//i.kissmetrics.com/i.js');
         _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     </script>
+
+
+    <link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css">
 </head>
 
 <body>
@@ -75,83 +78,451 @@
     <h1 class="titulo">¿ Qué es <span class="customFont">weaver</span> ?</h1>
       <h4 class="subtitulo">Una plataforma que te permite conocer nuevas personas a través de preguntas anónimas. Te ayuda crear conexiones más sinceras antes de ver su perfil.</h4>
   </div>
-  <div class="tercerSeccion">
-    <div class="container">
-        <h1 class="titulo">¿Cómo funciona?</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active text-center">
-                                <h3 class="pasos">1. CREA</h3>
-                            </a>
-                            <a href="#" class="list-group-item text-center">
-                                <h3 class="pasos">2. ARROJA</h3>
-                            </a>
-                            <a href="#" class="list-group-item text-center">
-                                <h3 class="pasos">3. TEJE</h3>
-                            </a>
-                            <a href="#" class="list-group-item text-center">
-                                <h3 class="pasos">4. CHAT</h3>
-                            </a>
-                            <a href="#" class="list-group-item text-center">
-                                <h3 class="pasos">5. CONECTA</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
-                        <!-- flight section -->
-                        <div class="bhoechie-tab-content active">
-                            <center style="border-right: 22px solid #215C92">
-                                <h3 style="margin-top: 0;">Crea tu perfil al ir contestando
-                                    diferentes preguntas y quizzes.
-                                    <br><br>
-                                    Las preguntas aparecerán día con día. Entre más contestes, más completo estará tu perfil.
-                                </h3>
-                            </center>
-                        </div>
-                        <!-- train section -->
-                        <div class="bhoechie-tab-content">
-                            <center style="margin-top: 120px;border-right: 22px solid #3B669D">
-                                <h3 style="margin-top: 0;">Pregunta aquello que te gustaría
-                                    saber sobre esa persona especial.
-                                    <br><br>
-                                    Seleccionamos a 3 weavers diferentes para que la contesten.
-                                </h3>
-                            </center>
-                        </div>
 
-                        <!-- hotel search -->
-                        <div class="bhoechie-tab-content">
-                            <center style="margin-top: 240px;border-right: 22px solid #5670A9">
-                                <h3 style="margin-top: 0;">Elige las respuestas que más te gusten y comienza a tejer hilos que te acerquen a esa persona especial.
-                                    <br><br>
-                                    Conózcanse de una forma más
-                                    profunda y honesta.</h3>
-                            </center>
+
+  <style>
+
+  .text-content {    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 98%;
+  }
+
+  .features-slider{
+    vertical-align: middle;
+    margin-top: 48px;
+  }
+
+  ul.tab-list{
+    border: none;
+    margin: 0 0 20px 0;
+  }
+
+  ul.tab-list li{
+    margin: 0 96px 0 0;
+    display: inline;
+    margin: 0 50px 0 0;
+  }
+
+  ul.tab-list li a.flex-active{
+    border:none;
+  }  
+
+  ul.tab-list li a{
+    text-align: center;
+    text-decoration: none;
+    
+    color: #292929;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 48px;
+    -webkit-transition: color 0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s;
+  }
+
+  ul.tab-list li a img{
+    margin-bottom: 18px;
+  }
+
+  ul.tab-list li a.flex-active i{
+    color: #e5227c;
+  }
+
+  ul.tab-list li a i{
+    font-size: 60px;
+    color: #bbb;
+
+    -webkit-transition: color 0.4s ease-in-out 0s;
+    -moz-transition: color 0.4s ease-in-out 0s;
+    -ms-transition: color 0.4s ease-in-out 0s;
+    transition: color 0.4s ease-in-out 0s;
+  }
+
+  ul.tab-list li a.flex-active span{
+    color: #e5227c;
+  }
+
+  ul.tab-list li a span{
+    color: #e5227c;
+
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #aaa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    -webkit-transition: color 0.4s ease-in-out 0s;
+    -moz-transition: color 0.4s ease-in-out 0s;
+    -ms-transition: color 0.4s ease-in-out 0s;
+    transition: color 0.4s ease-in-out 0s;
+  }
+
+  .tab-slider-container .flexslider{
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 2; 
+  }
+
+  .tab-slider-container .flexslider {
+    background: transparent;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+    zoom: 1;
+  }
+
+  .tab-slider-container .flexslider {
+    margin: 0;
+    padding: 0;
+
+    border:none;
+  }
+
+  .sixcol {
+    float: left;
+    display: block;
+    margin-right: 3.44828%;
+    width: 48.27586%;
+
+    min-height: 1px;
+  }
+
+  .big {
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 34px;
+    font-weight: 300;
+    color: #333;
+  }
+
+  .last {
+    font-family: Roboto;
+    margin-right: 0;
+    font-size: 18px;
+  }
+
+  .iphone-slider-container {
+    max-width: 400px; 
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .iphone-slider-container .iphone {
+    max-width: 88%;
+  }
+
+  .flex-slider-container {
+    width: 69%;
+    height: auto;
+    top: 13.1%;
+    left: 9.3%;
+
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .iphone-slider-container .flexslider{
+    max-height: 100%;
+
+    webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 2;
+
+    background: transparent;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+    zoom: 1;
+
+    margin: 0;
+    padding: 0;
+  }
+  </style>
+
+  <script type="text/javascript">
+    jQuery(window).load(function() {
+        jQuery('#features-slider.tab-slider-container .flexslider').flexslider({
+            animation: "slide",
+            slideshowSpeed: 5000,
+            animationSpeed: 600,
+            namespace: "flex-",
+            controlNav: true,
+            directionNav: false,
+            smoothHeight: false,
+            animationLoop: true,
+            slideshow: true,
+            easing: "swing",
+            sync: "#features-iphone-slider.flex-slider-container .flexslider",
+            manualControls: "#features-slider .tab-list li a",
+            controlsContainer: "#features-slider .tab-list"
+        })
+    });
+
+  jQuery(document).ready(function($) {
+    jQuery('#features-iphone-slider.flex-slider-container .flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: 5000,
+        animationSpeed: 600,
+        namespace: "flex-",
+        pauseOnAction: false,
+        pauseOnHover: false,
+        controlNav: false,
+        directionNav: false,
+        direction: "horizontal",
+        prevText: "<span class=\"icon-angle-left\"></span>",
+        nextText: "<span class=\"icon-angle-right\"></span>",
+        smoothHeight: false,
+        animationLoop: true,
+        slideshow: true,
+        easing: "swing",
+        controlsContainer: "#features-iphone-slider.flex-slider-container"
+    })
+  });
+</script>
+
+  <div class="tercerSeccion" style="background: none; background-color:#F4F4F4; height: 100vh;">
+    <div class="container">
+      
+    <div class="text-content">
+      <div class="col-md-8 col-sm-6 col-xs-12">        
+        <h1 style="margin: 0 30px 60px 30px;">¿Cómo funciona?</h1>
+        <div id="features-slider" class="tab-slider-container">
+
+            <ul class="tab-list">
+              <li>                
+                <a href="#0">                  
+                  <img src="img/slider/1.png" alt="Crea">
+                  <span class="tab-title">Crea</span>                  
+                </a>
+              </li>              
+              <li>
+                <a href="#1">
+                  <img src="img/slider/2.png" alt="Crea">
+                  <span class="tab-title">Arroja</span>
+                </a>
+              </li>              
+              <li>
+                <a href="#2">
+                  <img src="img/slider/3.png" alt="Crea">
+                  <span class="tab-title">Teje</span>
+                </a>
+              </li>              
+              <li>
+                <a href="#3">
+                  <img src="img/slider/4.png" alt="Crea">
+                  <span class="tab-title">Chat</span>
+                </a>
+              </li>              
+              <li>
+                <a href="#4">
+                  <img src="img/slider/5.png" alt="Crea">
+                  <span class="tab-title">Conecta</span>
+                </a>
+              </li>              
+            </ul>
+
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <div class="sixcol">
+                    <div class="big">
+                      Crea tu perfil al ir contestando diferentes preguntas y quizzes.
+                    </div>
+                  </div>
+                  <br>
+                  <div class="sixcol last">
+                    Las preguntas aparecerán día con día. Entre más contestes, más completo estará tu perfil.
+                    <br>
+                  </div>
+                  <div class="clearfix"></div>
+                  <br>
+                </li>
+                <li>
+                  <div class="sixcol">
+                    <div class="big">
+                      Pregunta aquello que te gustaría saber sobre esa persona especial.
+                    </div>
+                  </div>
+                  <br>
+                  <div class="sixcol last">
+                    Seleccionamos a 3 weavers diferentes para que la contesten.
+                    <br>
+                  </div>
+                  <div class="clearfix"></div>
+                  <br>
+                </li>
+                <li>
+                  <div class="sixcol">
+                    <div class="big">
+                      Elige las respuestas que más te gusten y comienza a tejer hilos que te acerquen a esa persona especial.
+                    </div>
+                  </div>
+                  <br>
+                  <div class="sixcol last">
+                    Conózcanse de una forma más profunda y honesta.
+                    <br>
+                  </div>
+                  <div class="clearfix"></div>
+                  <br>
+                </li>
+                <li>
+                  <div class="sixcol">
+                    <div class="big">
+                      Cuando hayas elegido a esa persona especial podrán hablar directamente.
+                    </div>
+                  </div>
+                  <br>
+                  <div class="sixcol last">
+                    Al fin podrás ver  con quién has estado compartiendo todo este tiempo.
+                    <br>
+                  </div>
+                  <div class="clearfix"></div>
+                  <br>
+                </li>
+                <li>
+                  <div class="sixcol">
+                    <div class="big">
+                      Disfruta de una promoción pensada exclusivamente para ustedes dos.
+                    </div>
+                  </div>
+                  <br>
+                  <div class="sixcol last">
+                    Los invitamos a que se conozcan en un lugar donde sabemos que lo disfrutarán.</h3>
+                    <br>
+                  </div>
+                  <div class="clearfix"></div>
+                  <br>
+                </li>
+              </ul>                        
+            </div>
+        </div>                  
+      </div>
+      
+      <div class="col-md-4 col-sm-6 hidden-xs">
+        <div class="iphone-slider-container">
+          <img src="img/iphone.png" alt="" class="iphone">
+          <div id="features-iphone-slider" class="flex-slider-container">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="img/slider/Landing_screens-01.jpg" />
+                </li>
+                <li>
+                  <img src="img/slider/Landing_screens-02.jpg" />
+                </li>
+                <li>
+                  <img src="img/slider/Landing_screens-03.jpg" />
+                </li>
+                <li>
+                  <img src="img/slider/Landing_screens-04.jpg" />
+                </li>
+                <li>
+                  <img src="img/slider/Landing_screens-05.jpg" />
+                </li>
+              </ul>          
+            </div>            
+          </div>
+        </div>
+      </div>          
+    
+    </div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+    <!--div class="tercerSeccion">
+        <div class="container">
+            <h1 class="titulo">¿Cómo funciona?</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active text-center">
+                                    <h3 class="pasos">1. CREA</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">2. ARROJA</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">3. TEJE</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">4. CHAT</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">5. CONECTA</h3>
+                                </a>
+                            </div>
                         </div>
-                        <div class="bhoechie-tab-content">
-                            <center style="margin-top: 330px;border-right: 22px solid #8680BC">
-                                <h3 style="margin-top: 0;">Cuando hayas elegido a esa persona especial podrán hablar directamente.
-                                    <br><br>
-                                    Al fin podrás ver  con quién has estado compartiendo todo este tiempo.</h3>
-                            </center>
-                        </div>
-                        <div class="bhoechie-tab-content">
-                            <center style="margin-top: 440px;border-right: 22px solid #BB98D8">
-                                <h3 style="margin-top: 0;">Disfruta de una promoción pensada
-                                    exclusivamente para ustedes dos.
-                                    <br><br>
-                                    Los invitamos a que se conozcan en un lugar donde sabemos que lo disfrutarán.</h3>
-                            </center>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                            <!-- flight section -->
+                            <!--div class="bhoechie-tab-content active">
+                                <center style="border-right: 22px solid #215C92">
+                                    <h3 style="margin-top: 0;">Crea tu perfil al ir contestando
+                                        diferentes preguntas y quizzes.
+                                        <br><br>
+                                        Las preguntas aparecerán día con día. Entre más contestes, más completo estará tu perfil.
+                                    </h3>
+                                </center>
+                            </div>
+                            <!-- train section -->
+                            <!--div class="bhoechie-tab-content">
+                                <center style="margin-top: 120px;border-right: 22px solid #3B669D">
+                                    <h3 style="margin-top: 0;">
+                                        Pregunta aquello que te gustaría saber sobre esa persona especial.
+                                        <br><br>
+                                        Seleccionamos a 3 weavers diferentes para que la contesten.
+                                    </h3>
+                                </center>
+                            </div>
+
+                            <!-- hotel search -->
+                            <!--div class="bhoechie-tab-content">
+                                <center style="margin-top: 240px;border-right: 22px solid #5670A9">
+                                    <h3 style="margin-top: 0;">
+                                        Elige las respuestas que más te gusten y comienza a tejer hilos que te acerquen a esa persona especial.
+                                        <br><br>
+                                        Conózcanse de una forma más
+                                        profunda y honesta.</h3>
+                                </center>
+                            </div>
+                            <div class="bhoechie-tab-content">
+                                <center style="margin-top: 330px;border-right: 22px solid #8680BC">
+                                    <h3 style="margin-top: 0;">
+                                        Cuando hayas elegido a esa persona especial podrán hablar directamente.
+                                        <br><br>
+                                        Al fin podrás ver  con quién has estado compartiendo todo este tiempo.</h3>
+                                </center>
+                            </div>
+                            <div class="bhoechie-tab-content">
+                                <center style="margin-top: 440px;border-right: 22px solid #BB98D8">
+                                    <h3 style="margin-top: 0;">Disfruta de una promoción pensada
+                                        exclusivamente para ustedes dos.
+                                        <br><br>
+                                        Los invitamos a que se conozcan en un lugar donde sabemos que lo disfrutarán.</h3>
+                                </center>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  </div>
+  </div-->
+
   <div class="cuartaSeccion">
     <div class="container">
         <h1 class="titulo">¿Por qué <span class="customFont">weaver</span> ?</h1>
@@ -341,7 +712,7 @@
       });
   </script>
 
-
-
+  <script src="js/jquery.flexslider.js"></script>
+  
 </body>
 </html>
