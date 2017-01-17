@@ -16,7 +16,7 @@ app.use('/', auth0Valerio.router({
 }));
 
 app.get('/dashboard', auth0Valerio.middlware.requiresLogin, function(req, res) {
-    res.send('Tu ID de usuario es: '+res.locals.uid);
+    res.send('Gracias por registrarte en Weaver! Pronto sabrás de nosotros.' + 'Tu ID de usuario es: ' + res.locals.uid);
 });
 
 // views is directory for all template files
