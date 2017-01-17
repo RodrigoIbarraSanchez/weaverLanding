@@ -17,7 +17,8 @@ app.use('/', auth0Valerio.router({
 
 app.get('/dashboard', auth0Valerio.middlware.requiresLogin, function(req, res) {
     // res.json(res.locals.user);
-    res.render(res.locals.user.name);
+    // res.send(res.locals.user.name);
+    res.render('pages/thanks');
 });
 
 // views is directory for all template files

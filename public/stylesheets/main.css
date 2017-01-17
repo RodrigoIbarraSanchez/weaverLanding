@@ -39,6 +39,16 @@
     background-size: cover;
 }
 
+.headerBGThanks {
+    background: url(https://s30.postimg.org/cz15rngm9/background.jpg) no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', serif;
+}
+
 .logoPrincipal .navbar-brand {
     height: 80px;
 }
