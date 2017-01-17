@@ -12,4 +12,9 @@ docker-compose.yml
 
 public/bower_components
 .DS_Store
+<<<<<<< HEAD
+
+.idea/workspace.xml
+=======
 .idea
+>>>>>>> c946921285da48e5369b5224aab4f8d06d11083e
