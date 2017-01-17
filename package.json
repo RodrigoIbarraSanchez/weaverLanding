@@ -10,6 +10,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "auth0-valerio": "git+https://github.com/SergioEnrique/auth0-valerio.git",
     "ejs": "2.4.1",
     "express": "4.13.3"
   },

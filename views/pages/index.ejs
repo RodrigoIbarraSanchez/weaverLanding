@@ -40,6 +40,7 @@
               <h4 class="lineaTexto">Weaver te presenta nuevas personas al contestar <br> preguntas y quizzes de forma anónima.</h4>
               <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo" data-target="#demo">DEMO</button>
               <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 20px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>
+              <a href class="btn-login">Log in</a>
           </div>
 
           <div class="modal fade" id="modalInicio" tabindex="-1" role="dialog" aria-labelledby="myModallabel" aria-hidden="true">
@@ -711,6 +712,33 @@
           });
       });
   </script>
+
+  <script>
+      $(document).ready(function() {
+
+          var port = ''
+          if (location.port.length === 4)
+              port = ':'+location.port
+
+          var lock = new Auth0Lock('appid', 'rodrigoibarra.auth0.com', {
+              auth: {
+                  redirectUrl: location.protocol+'//'+location.hostname+port+'/callback',
+                  responseType: 'code',
+                  params: {
+                      scope: 'openid email'
+                  }
+              }
+          })
+
+          $('.btn-login').click(function(e) {
+              e.preventDefault()
+              lock.show()
+          })
+
+      })
+  </script>
+
+  <script src="https://cdn.auth0.com/js/lock/10.9.1/lock.min.js"></script>
 
   <script src="js/jquery.flexslider.js"></script>
   
