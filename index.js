@@ -4,6 +4,8 @@ var auth0Valerio = require('auth0-valerio');
 
 app.set('port', (process.env.PORT || 5000));
 
+app.use(express.static(__dirname + '/public'));
+
 // Auth0 Routes
 app.use('/', auth0Valerio.router({
     domain: 'rodrigoibarra.auth0.com',
@@ -14,10 +16,8 @@ app.use('/', auth0Valerio.router({
 }));
 
 app.get('/dashboard', auth0Valerio.middlware.requiresLogin, function(req, res) {
-    res.send('Página de usuario');
+    res.send('Tu ID de usuario es: '+res.locals.uid);
 });
-
-app.use(express.static(__dirname + '/public'));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
