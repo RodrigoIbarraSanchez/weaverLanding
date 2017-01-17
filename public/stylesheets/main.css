@@ -40,13 +40,20 @@
 }
 
 .headerBGThanks {
-    background: url(https://s30.postimg.org/cz15rngm9/background.jpg) no-repeat center center fixed;
+    background: white;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Roboto', serif;
+}
+
+.imagen-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
 }
 
 .logoPrincipal .navbar-brand {
