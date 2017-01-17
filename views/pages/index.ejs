@@ -18,6 +18,7 @@
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/auth0-lock/build/lock.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
 
     <link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css">
 </head>
@@ -41,11 +42,11 @@
               <h1 class="pb">Crea relaciones significativas</h1>
               <h4 class="lineaTexto">Weaver te presenta nuevas personas al contestar <br> preguntas y quizzes de forma anónima.</h4>
               <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo" data-target="#demo">DEMO</button>
-              <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 20px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>
-              <a href class="btn-login">Log in</a>
+              <!--<button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 20px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>-->
+              <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login" style="margin-top: 20px;">COMENZAR A CONECTAR</button>
           </div>
 
-          <div class="modal fade" id="modalInicio" tabindex="-1" role="dialog" aria-labelledby="myModallabel" aria-hidden="true">
+          <!--div class="modal fade" id="modalInicio" tabindex="-1" role="dialog" aria-labelledby="myModallabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -57,19 +58,19 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
                                 <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
-                            </div>
+                            <!--/div>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="mail" placeholder="Mail">
                             </div>
                             <div class="form-group">
                                 <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
                             </div>
-                            <button type="submit" class="btn btnModal">Comenzar</button>
+                            <button type="submit" class="btn btnModal btn-login">Comenzar</button>
                         </form>
                     </div>
                 </div>
             </div>
-          </div>
+          </div-->
 
       </div>
       <div class="container">
@@ -678,7 +679,8 @@
                                   <p class="mensajeDos"><strong>Estás muy cerca de encontrar a la indicada.</strong></p>
                               </div>
                           </div>
-                          <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>
+                          <!--<button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>-->
+                          <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>
                           <!--div class="row">
                               <button class="btn btn-primary btn.lg" ng-click="resultados.reset()">Regresar</button>
                           </div-->
@@ -739,8 +741,6 @@
 
       })
   </script>
-
-  <script src="js/jquery.flexslider.js"></script>
   
 </body>
 </html>
