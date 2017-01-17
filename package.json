@@ -11,10 +11,10 @@
     "postinstall": "bower install"
   },
   "dependencies": {
-    "auth0-valerio": "git+https://github.com/SergioEnrique/auth0-valerio.git",
     "bower": "^1.8.0",
     "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "valerio-auth0": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
