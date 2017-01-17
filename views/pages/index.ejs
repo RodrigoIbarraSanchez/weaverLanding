@@ -16,6 +16,8 @@
         _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
     </script>
 
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/auth0-lock/build/lock.min.js"></script>
 
     <link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css">
 </head>
@@ -720,7 +722,7 @@
           if (location.port.length === 4)
               port = ':'+location.port
 
-          var lock = new Auth0Lock('appid', 'rodrigoibarra.auth0.com', {
+          var lock = new Auth0Lock('4ceBlUH076OKGR4mANDbqyHKDAQOwdIu', 'rodrigoibarra.auth0.com', {
               auth: {
                   redirectUrl: location.protocol+'//'+location.hostname+port+'/callback',
                   responseType: 'code',
@@ -737,8 +739,6 @@
 
       })
   </script>
-
-  <script src="https://cdn.auth0.com/js/lock/10.9.1/lock.min.js"></script>
 
   <script src="js/jquery.flexslider.js"></script>
   
