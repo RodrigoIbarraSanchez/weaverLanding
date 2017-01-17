@@ -16,7 +16,7 @@ app.use('/', auth0Valerio.router({
 }));
 
 app.get('/dashboard', auth0Valerio.middlware.requiresLogin, function(req, res) {
-    res.send('Tu ID de usuario es: '+res.locals.uid);
+    res.json(res.locals.user);
 });
 
 // views is directory for all template files
