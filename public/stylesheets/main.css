@@ -637,8 +637,8 @@ ul.tab-list li a span{
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 320px) and (min-width : 375px){
     .logoP {
         width: 400px;
         display: block;
@@ -647,32 +647,4 @@ ul.tab-list li a span{
         margin-top: 50px;
         border: none;
     }
-    .pb {
-        font-size: 138px;
-        margin-top: -200px;
-        text-align: center;
-        text-shadow: 6px 6px 16px #333;
-    }
-    .lineaTexto {
-        font-size: 57px;
-        line-height: 63px;
-        margin-top: 50px;
-        text-align: center;
-        text-shadow: 6px 6px 16px #333;
-    }
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
 }
