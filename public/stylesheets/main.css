@@ -492,7 +492,7 @@ ul.tab-list li a img{
 }
 
 ul.tab-list li a.flex-active i{
-    color: #e5227c;
+    color: #337ab7;
 }
 
 ul.tab-list li a i{
@@ -506,11 +506,14 @@ ul.tab-list li a i{
 }
 
 ul.tab-list li a.flex-active span{
-    color: #e5227c;
+    background: -webkit-linear-gradient(#b99add,#9ba8d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #a7a1d9;
 }
 
 ul.tab-list li a span{
-    color: #e5227c;
+    color: #337ab7;
 
     display: block;
     font-size: 16px;
