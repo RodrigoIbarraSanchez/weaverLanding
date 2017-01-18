@@ -161,6 +161,7 @@
     -o-background-size: cover;
     background-size: cover;
     padding: 10px;
+    height: 100vh;
 }
 
 .tercerSeccion .titulo {
@@ -579,11 +580,11 @@ ul.tab-list li a span{
 }
 
 .iphone-slider-container .iphone {
-    max-width: 88%;
+    max-width: 100%;
 }
 
 .flex-slider-container {
-    width: 69%;
+    width: 80%;
     height: auto;
     top: 13.1%;
     left: 9.3%;
@@ -673,5 +674,8 @@ ul.tab-list li a span{
     .segundaSeccion .subtitulo {
         font-size: 45px;
         line-height: 55px;
+    }
+    .tercerSeccion {
+        height: 50vh;
     }
 }
