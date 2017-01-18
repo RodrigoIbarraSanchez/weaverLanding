@@ -717,4 +717,36 @@ ul.tab-list li a span{
         line-height: 53px;
         width: 700px;
     }
+    .imgPQW {
+        width: 150px;
+        margin-top: 45px;
+    }
+    .cuartaSeccion {
+        height: 290vh;
+    }
+    .cuartaSeccion .titulo {
+        font-size: 75px;
+        margin-bottom: 0px;
+    }
+    .cuartaSeccion h3 {
+        font-family: 'Roboto';
+        color: darkgray;
+        font-size: 56px;
+        line-height: 62px;
+    }
+    .cuartaSeccion h4 {
+        font-family: 'Roboto';
+        color: #337ab7;
+        font-size: 56px;
+        line-height: 62px;
+        margin-top: 50px;
+    }
+    .cuartaSeccion p {
+        font-family: 'Roboto';
+        color: #337ab7;
+        font-size: 56px;
+        line-height: 62px;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
 }
