@@ -440,3 +440,239 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .btnModalfocus {
     outline:0px;
 }
+
+
+/* Styles R */
+.text-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 98%;
+}
+
+.features-slider{
+    vertical-align: middle;
+    margin-top: 48px;
+}
+
+ul.tab-list{
+    border: none;
+    margin: 0 0 20px 0;
+}
+
+ul.tab-list li{
+    margin: 0 96px 0 0;
+    display: inline;
+    margin: 0 50px 0 0;
+}
+
+ul.tab-list li a.flex-active{
+    border:none;
+}
+
+ul.tab-list li a{
+    text-align: center;
+    text-decoration: none;
+
+    color: #292929;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 48px;
+    -webkit-transition: color 0.2s ease-in-out 0s;
+    -moz-transition: color 0.2s ease-in-out 0s;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+ul.tab-list li a img{
+    margin-bottom: 18px;
+}
+
+ul.tab-list li a.flex-active i{
+    color: #e5227c;
+}
+
+ul.tab-list li a i{
+    font-size: 60px;
+    color: #bbb;
+
+    -webkit-transition: color 0.4s ease-in-out 0s;
+    -moz-transition: color 0.4s ease-in-out 0s;
+    -ms-transition: color 0.4s ease-in-out 0s;
+    transition: color 0.4s ease-in-out 0s;
+}
+
+ul.tab-list li a.flex-active span{
+    color: #e5227c;
+}
+
+ul.tab-list li a span{
+    color: #e5227c;
+
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #aaa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    -webkit-transition: color 0.4s ease-in-out 0s;
+    -moz-transition: color 0.4s ease-in-out 0s;
+    -ms-transition: color 0.4s ease-in-out 0s;
+    transition: color 0.4s ease-in-out 0s;
+}
+
+.tab-slider-container .flexslider{
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 2;
+}
+
+.tab-slider-container .flexslider {
+    background: transparent;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+    zoom: 1;
+}
+
+.tab-slider-container .flexslider {
+    margin: 0;
+    padding: 0;
+
+    border:none;
+}
+
+.sixcol {
+    float: left;
+    display: block;
+    margin-right: 3.44828%;
+    width: 48.27586%;
+
+    min-height: 1px;
+}
+
+.big {
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 34px;
+    font-weight: 300;
+    color: #333;
+}
+
+.last {
+    font-family: Roboto;
+    margin-right: 0;
+    font-size: 18px;
+}
+
+.iphone-slider-container {
+    max-width: 400px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.iphone-slider-container .iphone {
+    max-width: 88%;
+}
+
+.flex-slider-container {
+    width: 69%;
+    height: auto;
+    top: 13.1%;
+    left: 9.3%;
+
+    position: absolute;
+    overflow: hidden;
+}
+
+.iphone-slider-container .flexslider{
+    max-height: 100%;
+
+    webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 2;
+
+    background: transparent;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+    zoom: 1;
+
+    margin: 0;
+    padding: 0;
+}
+
+/*.logoP {
+    width: 400px;
+    display: block;
+    margin-left: 182px;
+    margin-right: auto;
+    margin-top: 50px;
+    border: none;
+}
+.pb {
+    font-size: 138px;
+    margin-top: -200px;
+    text-align: center;
+    text-shadow: 6px 6px 16px #333;
+}
+.lineaTexto {
+    font-size: 57px;
+    line-height: 63px;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 6px 6px 16px #333;
+}*/
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 374px) {
+    .logoP {
+        width: 400px;
+        display: block;
+        margin-left: 182px;
+        margin-right: auto;
+        margin-top: 50px;
+        border: none;
+    }
+    .pb {
+        font-size: 138px;
+        margin-top: -200px;
+        text-align: center;
+        text-shadow: 6px 6px 16px #333;
+    }
+    .lineaTexto {
+        font-size: 57px;
+        line-height: 63px;
+        margin-top: 50px;
+        text-align: center;
+        text-shadow: 6px 6px 16px #333;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
