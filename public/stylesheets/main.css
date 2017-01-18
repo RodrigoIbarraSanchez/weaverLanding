@@ -161,7 +161,7 @@
     -o-background-size: cover;
     background-size: cover;
     padding: 10px;
-    height: 100vh;
+    height: 75vh;
 }
 
 .tercerSeccion .titulo {
@@ -612,6 +612,7 @@ ul.tab-list li a span{
     padding: 0;
 }
 
+
 /*.logoP {
     width: 400px;
     display: block;
@@ -681,5 +682,13 @@ ul.tab-list li a span{
     .col-centered{
         float: none;
         margin: 0 auto;
+    }
+    .iphone-slider-container {
+        margin-top: 0!important;
+    }
+    .cfTitulo {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Roboto';
     }
 }
