@@ -654,6 +654,17 @@ ul.tab-list li a span{
 .footerNav {
     margin-top: 30px;
 }
+.respuestaConImagen{
+    cursor: pointer;
+    height: 165px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.botonesSiNo {
+    padding: 0!important;
+}
 
 
 
@@ -710,18 +721,18 @@ ul.tab-list li a span{
         text-shadow: 1px 1px 1px #333;
     }
     .btn-responsivo2 {
-        width: 100% !important;
+        width: 85% !important;
         height: 7vh!important;
         margin-top: 90px;
         font-family: 'Roboto';
-        font-size: 44px;
+        font-size: 22px;
     }
     .btn-responsivo3 {
         width: 80% !important;
         height: 7vh!important;
         margin-top: 90px;
         font-family: 'Roboto';
-        font-size: 44px;
+        font-size: 33px;
     }
     .segundaSeccion .titulo {
         font-size: 38px;
@@ -733,7 +744,7 @@ ul.tab-list li a span{
         width: 100%;
     }
     .tercerSeccion {
-        height: 90vh;
+        height: 140vh;
     }
     .col-centered{
         float: none;
@@ -752,6 +763,7 @@ ul.tab-list li a span{
         width: 600px;
         margin-left: -88px;
         margin-top: -40px;
+        margin-bottom: 0;
     }
     ul.tab-list li a {
         border: none;
@@ -764,135 +776,63 @@ ul.tab-list li a span{
         font-size: 13px;
     }
 
-    /*
-    ul.tab-list {
-        border: none;
-        margin: 0 0 20px -41px;
-    }
-    ul.tab-list li a img {
-        width: 70px;
-    }
-    ul.tab-list li a span {
-        font-size: 28px;
-    }
     .last {
         margin-right: 1px!important;
     }
     .big {
-        font-size: 40px;
-        line-height: 53px;
-        width: 700px;
+        font-size: 23px;
+        line-height: 26px;
     }
     .last {
-        font-size: 40px;
-        line-height: 53px;
-        width: 700px;
+        font-size: 23px;
+        line-height: 26px;
     }
-    .imgPQW {
-        width: 150px;
-        margin-top: 45px;
+    .sixcol {
+        width: 100%;
+        text-align: center;
     }
-    .cuartaSeccion {
-        height: 5200px;
+    .flex-slider-container {
+        top: 45.1%;
     }
     .cuartaSeccion .titulo {
-        font-size: 75px;
-        margin-bottom: 0px;
+        font-size: 28px;
+        margin-bottom: 5px!important;
     }
-    .cuartaSeccion h3 {
-        font-family: 'Roboto';
-        color: darkgray;
-        font-size: 56px;
-        line-height: 62px;
+    .imgPQW {
+        width: 80px;
     }
-    .cuartaSeccion h4 {
-        font-family: 'Roboto';
-        color: #337ab7;
-        font-size: 56px;
-        line-height: 62px;
-        margin-top: 50px;
+    .PQW {
+        margin-bottom: 0!important;
     }
-    .cuartaSeccion p {
-        font-family: 'Roboto';
-        background: -webkit-linear-gradient(#b59bdd,#86b0d2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: #89afd2;
-        color: rgba(124,181,208,1);
-        font-size: 56px;
-        line-height: 62px;
-        margin-top: 50px;
-        margin-bottom: 150px;
+    .cuartaSeccion {
+        height: 280vh;
     }
-    .segundoT {
-        margin-top: 200px!important;
+    .btn-download {
+        margin-top: 35%;
     }
     .quintaseccion {
-        height: 1240px;
-    }
-    .quintaseccion .titulo {
-        font-size: 108px;
-    }
-    .circulo {
-        width: 50px;
-        height: 50px;
-    }
-    .circulo-respondido {
-        width: 50px;
-        height: 50px;
+        height: 650px;
     }
     .btn-pregunta {
-        width: 100%;
-        height: 148px;
+        width: 90%;
+        height: 93px;
         padding: 18px;
-        font-size: 47px;
+        font-size: 23px;
         background-color: rgba(245, 245, 245, 0.419608)!important;
     }
     .respuesta {
-        padding: 32px 20px;
+        padding: 7px;
     }
-    .preguntaFinalDemo {
-        font-size: 60px;
+    .respuestaConImagen {
+        height: auto;
     }
-    .mensaje {
-        font-size: 60px;
-        font-family: "Raleway";
+    .btnAQ {
+        margin-top: 50px!important;
     }
-    .mensajeDos {
-        font-size: 60px;
+    .headerBG {
+        position: relative;
     }
     footer {
-        height: 27vh;
+        height: 70vh;
     }
-    .logoFooter {
-        width: 200px;
-    }
-    footer p {
-        margin-top: 0!important;
-        font-size: 35px;
-    }
-    footer img {
-        width: 300px;
-        margin-top: 0!important;
-    }
-    .footerNav {
-        margin-top: 0!important;
-    }
-    footer a {
-        font-size: 22px;
-    }
-    .logoThanks {
-        width: 400px;
-    }
-    .agraThanks {
-        font-size: 70px;
-    }
-    .contaThanks {
-        font-size: 45px;
-    }
-    .backHome {
-        width: 150px;
-    }
-    .pieThanks {
-        font-size: 30px;
-    }*/
 }

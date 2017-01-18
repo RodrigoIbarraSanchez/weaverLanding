@@ -263,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-centered">
+                <div class="col-md-4 col-sm-6">
                     <div class="iphone-slider-container" style="margin-top: -160px">
                         <img src="img/iphone.png" alt="" class="iphone">
                         <div id="features-iphone-slider" class="flex-slider-container">
@@ -381,19 +381,19 @@
     </div>
     <div class="container centrado">
         <div class="row">
-            <div class="col-md-4 col-sm-12" style="margin-bottom: 40px">
+            <div class="col-md-4 col-sm-12 PQW" style="margin-bottom: 40px">
                 <img class="imgPQW" src="https://s28.postimg.org/ocpy48h1p/icono1.png" alt="">
                 <h3>Preguntas interesantes</h3>
                 <h4 style="color: black" class="separacion">No gastes tiempo llenando interminables perfiles que en realidad no pueden expresar quien realmente eres.</h4>
                 <p class="separacion segundoT">Nuestras preguntas y quizzes descubren lo mejor de ti, nos ayudan a saber lo que estás buscando.</p>
             </div>
-            <div class="col-md-4 col-sm-12" style="margin-bottom: 40px">
+            <div class="col-md-4 col-sm-12 PQW" style="margin-bottom: 40px">
                 <img class="imgPQW" src="https://s27.postimg.org/pavf84qgz/icono2.png" alt="">
                 <h3>Como una cita a ciegas</h3>
                 <h4 style="color: black" class="separacion">Solo sé tú mismo, conecta de una manera auténtica y natural.</h4>
                 <p class="separacion segundoT">Vive una verdadera experiencia de cita a ciegas. Comparte y ve más allá con alguien sin ningún prejuicio.</p>
             </div>
-            <div class="col-md-4 col-sm-12" style="margin-bottom: 40px">
+            <div class="col-md-4 col-sm-12 PQW" style="margin-bottom: 40px">
                 <img class="imgPQW" src="https://s23.postimg.org/xd1950biz/icono3.png" alt="">
                 <h3>No más swiping</h3>
                 <h4 style="color: black" class="separacion">Deja de coleccionar “matches” y enfócate en personas que realmente les importa.</h4>
@@ -402,19 +402,19 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12 PQW">
                 <img class="imgPQW" src="https://s30.postimg.org/777aho69d/icono4.png" alt="">
                 <h3>Cerca de ti</h3>
                 <h4 style="color: black" class="separacion">Conoce gente a tu alrededor, esta vez sin ningún filtro.</h4>
                 <p class="separacion segundoT">Nunca sabrás lo que encontrarás. Un excelente amigo o algo más. Te sorprenderás.</p>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12 PQW">
                 <img class="imgPQW" src="https://s29.postimg.org/cacx7o0qv/icono5.png" alt="">
                 <h3>Llévalo al mundo real</h3>
                 <h4 style="color: black" class="separacion">Disfruta de ofertas especiales en lugares cerca de ustedes para una primer cita.</h4>
                 <p class="separacion segundoT">Es nuestra manera de celebrar que se conocieron.</p>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12 PQW">
                 <img class="imgPQW" src="https://s24.postimg.org/t71px265h/icono6.png" alt="">
                 <h3>Evita atención innecesaria</h3>
                 <h4 style="color: black" class="separacion">La interacción de Weaver evitará que conozcas gente que no busca una relación más honesta.</h4>
@@ -489,9 +489,9 @@
                                       <!-- PREGUNTA --><h4 class="btn-round-lg btn-lg btn-pregunta">{{quiz.preguntaActiva+1 + ". " + quiz.dataService.preguntasQuiz[quiz.preguntaActiva].text}}</h4>
                                       <div class="row" ng-if="quiz.dataService.preguntasQuiz[quiz.preguntaActiva].type === 'text'">
                                           <div class="col-sm-12 col-md-3 col-md-offset-2" ng-repeat="respuesta in quiz.dataService.preguntasQuiz[quiz.preguntaActiva].posibilidades">
-                                              <!-- RESPUESTA --><h4 class="respuesta btn btn-primary btn-round-lg btn-lg btn-option btn-responsivo2" ng-class="{'bg-info': $index === quiz.dataService.preguntasQuiz[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
-                                                  {{respuesta.respuesta}}
-                                              </h4>
+                                              <!-- RESPUESTA --><div class="respuesta btn btn-primary btn-round-lg btn-lg btn-option btn-responsivo2" ng-class="{'bg-info': $index === quiz.dataService.preguntasQuiz[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
+                                                  <span>{{respuesta.respuesta}}</span>
+                                              </div>
                                           </div>
                                       </div>
                                       <div class="row" ng-if="quiz.dataService.preguntasQuiz[quiz.preguntaActiva].type === 'image'" style="margin-top: 60px">
@@ -528,7 +528,7 @@
                               </div>
                           </div>
                           <!--<button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>-->
-                          <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login btn-responsivo3" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>
+                          <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login btnAQ" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>
                           <!--div class="row">
                               <button class="btn btn-primary btn.lg" ng-click="resultados.reset()">Regresar</button>
                           </div-->

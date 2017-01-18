@@ -56,15 +56,6 @@ body {
 .respuesta:hover {
     cursor: pointer;
 }
-
-.respuestaConImagen{
-    cursor: pointer;
-    height: 165px;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 .respuestaConImagen img{
     width: 100%;
     height: auto;
