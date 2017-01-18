@@ -864,4 +864,19 @@ ul.tab-list li a span{
     footer a {
         font-size: 22px;
     }
+    .logoThanks {
+        width: 400px;
+    }
+    .agraThanks {
+        font-size: 70px;
+    }
+    .contaThanks {
+        font-size: 45px;
+    }
+    .backHome {
+        width: 150px;
+    }
+    .pieThanks {
+        font-size: 30px;
+    }
 }
