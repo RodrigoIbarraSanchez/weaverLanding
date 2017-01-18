@@ -685,32 +685,29 @@ ul.tab-list li a span{
 
 @media (max-device-width: 481px) {
     .logoP {
-        width: 400px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        border: none;
+        width: 150px;
     }
     .pb {
-        font-size: 108px;
-        margin-top: -650px;
-        text-shadow: 6px 8px 9px #333;
+        font-size: 49px;
+        margin-top: -148px;
+        text-shadow: 3px 1px 4px #333;
     }
     .lineaTexto {
-        font-size: 57px;
-        line-height: 63px;
-        margin-top: 50px;
+        font-size: 27px;
+        line-height: 27px;
         text-align: center;
-        text-shadow: 6px 8px 9px #333;
+        text-shadow: 3px 1px 4px #333;
     }
     .btn-responsivo {
         width: 100% !important;
-        height: 5vh!important;
-        margin-top: 90px;
+        height: 7vh!important;
+        margin-top: 5px;
         font-family: 'Roboto';
-        font-size: 40px;
-        box-shadow: 6px 6px 16px #333;
+        font-size: 20px;
+        box-shadow: 1px 2px 6px #333;
+    }
+    .btn-DemoRes {
+        text-shadow: 1px 1px 1px #333;
     }
     .btn-responsivo2 {
         width: 100% !important;
@@ -727,12 +724,13 @@ ul.tab-list li a span{
         font-size: 44px;
     }
     .segundaSeccion .titulo {
-        font-size: 76px;
-        padding-top: 90px;
+        font-size: 38px;
     }
     .segundaSeccion .subtitulo {
-        font-size: 45px;
-        line-height: 55px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 22px;
+        width: 100%;
     }
     .tercerSeccion {
         height: 90vh;
@@ -745,10 +743,28 @@ ul.tab-list li a span{
         margin-top: 0!important;
     }
     .cfTitulo {
-        font-size: 75px;
+        font-size: 28px;
         text-align: center;
         font-family: 'Roboto';
+        margin-top: -40px!important;
     }
+    ul.tab-list {
+        width: 600px;
+        margin-left: -88px;
+        margin-top: -40px;
+    }
+    ul.tab-list li a {
+        border: none;
+        margin-right: -37px;
+    }
+    ul.tab-list li a img {
+        width: 50px;
+    }
+    ul.tab-list li a span {
+        font-size: 13px;
+    }
+
+    /*
     ul.tab-list {
         border: none;
         margin: 0 0 20px -41px;
@@ -878,5 +894,5 @@ ul.tab-list li a span{
     }
     .pieThanks {
         font-size: 30px;
-    }
+    }*/
 }

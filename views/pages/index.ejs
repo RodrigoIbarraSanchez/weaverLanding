@@ -48,7 +48,7 @@
                       <h4 class="lineaTexto">Weaver te presenta nuevas personas al contestar <br> preguntas y quizzes de forma anónima.</h4>
                       <div class="row">
                           <div class="col-md-12 col-xs-12">
-                              <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo btn-responsivo" data-target="#demo">DEMO</button>
+                              <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo btn-responsivo btn-DemoRes" data-target="#demo">DEMO</button>
                               <!--<button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 20px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>-->
                               <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login btn-responsivo" style="margin-top: 20px;">COMENZAR A CONECTAR</button>
                           </div>
@@ -90,8 +90,10 @@
       </div>
   </div>
   <div class="segundaSeccion">
-    <h1 class="titulo">¿ Qué es <span class="customFont">weaver</span> ?</h1>
-      <h4 class="subtitulo">Una plataforma que te permite conocer nuevas personas a través de preguntas anónimas. Te ayuda a crear conexiones más sinceras antes de ver su perfil.</h4>
+    <div class="container">
+        <h1 class="titulo">¿ Qué es <span class="customFont">weaver</span> ?</h1>
+        <p class="subtitulo">Una plataforma que te permite conocer nuevas personas a través de preguntas anónimas. Te ayuda a crear conexiones más sinceras antes de ver su perfil.</p>
+    </div>
   </div>
 
   <script type="text/javascript">
@@ -144,7 +146,7 @@
                     <div class="container">
                         <div class="row">
                             <div id="features-slider" class="tab-slider-container">
-                                <div class="col-md-12">
+                                <div class="col-sm-12">
                                     <ul class="tab-list">
                                         <li>
                                             <a href="#0">
@@ -588,8 +590,7 @@
                   emailInputPlaceholder: "ejemplo@tuemail.com",
                   emailPasswordPlaceholder: "tu contraseña",
                   title: ""
-              },
-              popupOptions: { width: 11300, height: 400, left: 200, top: 300 }
+              }
           })
 
           $('.btn-login').click(function(e) {
