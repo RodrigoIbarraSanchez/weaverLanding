@@ -53,10 +53,6 @@ body {
     margin-top: 40px;
 }
 
-.respuesta {
-    padding: 15px 20px;
-}
-
 .respuesta:hover {
     cursor: pointer;
 }
@@ -99,52 +95,9 @@ body {
     margin-right:-50px;
 }
 
-.circulo-respondido {
-    background: rgb(245, 245, 245);
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 40px 5px 0 5px;
-    border: 1px solid rgb(245, 245, 245);
-}
-
-.circulo {
-    background: transparent!important;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 1px solid rgb(245, 245, 245);
-    width: 20px;
-    height: 20px;
-    margin: 40px 5px 0 5px;
-}
-
 .glyphicon-question-sign:before {
     content: "\e085";
     color: transparent;
-}
-
-.btn-pregunta {
-    color: white;
-    width: 50%;
-    margin-top: 80px;
-    font-family: Roboto;
-    background-color: rgba(245, 245, 245, 0.419608);
-    font-size: 22px;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    display: block;
-    margin-top: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    border:none;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 10px 13px 30px rgba(86, 86, 86, 0.28);
 }
 
 .btn-option {

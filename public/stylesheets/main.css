@@ -246,10 +246,21 @@ div.bhoechie-tab-menu div.list-group>a.active, div.bhoechie-tab-menu div.list-gr
     color: white;
     width: 50%;
     margin-top: 80px;
-    font-family: 'Roboto';
-    background-color: rgba(245, 245, 245, 0.42);
-    border: none;
+    font-family: Roboto;
+    background-color: rgba(245, 245, 245, 0.419608);
     font-size: 22px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    display: block;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 13px 30px rgba(86, 86, 86, 0.28);
 }
 
 .btn-option {
@@ -615,6 +626,36 @@ ul.tab-list li a span{
     padding: 0;
 }
 
+.circulo-respondido {
+    background: rgb(245, 245, 245);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 40px 5px 0 5px;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.circulo {
+    background: transparent!important;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid rgb(245, 245, 245);
+    width: 20px;
+    height: 20px;
+    margin: 40px 5px 0 5px;
+}
+.respuesta {
+    padding: 15px 20px;
+}
+
+.footerNav {
+    margin-top: 30px;
+}
+
+
 
 /*.logoP {
     width: 400px;
@@ -670,6 +711,20 @@ ul.tab-list li a span{
         font-family: 'Roboto';
         font-size: 40px;
         box-shadow: 6px 6px 16px #333;
+    }
+    .btn-responsivo2 {
+        width: 100% !important;
+        height: 7vh!important;
+        margin-top: 90px;
+        font-family: 'Roboto';
+        font-size: 44px;
+    }
+    .btn-responsivo3 {
+        width: 80% !important;
+        height: 7vh!important;
+        margin-top: 90px;
+        font-family: 'Roboto';
+        font-size: 44px;
     }
     .segundaSeccion .titulo {
         font-size: 76px;
@@ -757,5 +812,53 @@ ul.tab-list li a span{
     }
     .quintaseccion .titulo {
         font-size: 108px;
+    }
+    .circulo {
+        width: 50px;
+        height: 50px;
+    }
+    .circulo-respondido {
+        width: 50px;
+        height: 50px;
+    }
+    .btn-pregunta {
+        width: 100%;
+        height: 148px;
+        padding: 18px;
+        font-size: 47px;
+        background-color: rgba(245, 245, 245, 0.419608)!important;
+    }
+    .respuesta {
+        padding: 32px 20px;
+    }
+    .preguntaFinalDemo {
+        font-size: 60px;
+    }
+    .mensaje {
+        font-size: 60px;
+        font-family: "Raleway";
+    }
+    .mensajeDos {
+        font-size: 60px;
+    }
+    footer {
+        height: 27vh;
+    }
+    .logoFooter {
+        width: 200px;
+    }
+    footer p {
+        margin-top: 0!important;
+        font-size: 35px;
+    }
+    footer img {
+        width: 300px;
+        margin-top: 0!important;
+    }
+    .footerNav {
+        margin-top: 0!important;
+    }
+    footer a {
+        font-size: 22px;
     }
 }
