@@ -638,13 +638,3 @@ ul.tab-list li a span{
 ==================================================*/
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 320px) and (min-width : 375px){
-    .logoP {
-        width: 400px;
-        display: block;
-        margin-left: 182px;
-        margin-right: auto;
-        margin-top: 50px;
-        border: none;
-    }
-}
