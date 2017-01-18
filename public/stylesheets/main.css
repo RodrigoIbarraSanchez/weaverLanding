@@ -677,7 +677,7 @@ ul.tab-list li a span{
         line-height: 55px;
     }
     .tercerSeccion {
-        height: 75vh;
+        height: 85vh;
     }
     .col-centered{
         float: none;
@@ -687,8 +687,31 @@ ul.tab-list li a span{
         margin-top: 0!important;
     }
     .cfTitulo {
-        font-size: 50px;
+        font-size: 75px;
         text-align: center;
         font-family: 'Roboto';
+    }
+    ul.tab-list {
+        border: none;
+        margin: 0 0 20px -41px;
+    }
+    ul.tab-list li a img {
+        width: 70px;
+    }
+    ul.tab-list li a span {
+        font-size: 28px;
+    }
+    .last {
+        margin-right: 1px!important;
+    }
+    .big {
+        font-size: 40px;
+        line-height: 53px;
+        width: 700px;
+    }
+    .last {
+        font-size: 40px;
+        line-height: 53px;
+        width: 700px;
     }
 }
