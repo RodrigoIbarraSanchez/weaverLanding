@@ -676,6 +676,10 @@ ul.tab-list li a span{
         line-height: 55px;
     }
     .tercerSeccion {
-        height: 50vh;
+        height: 75vh;
+    }
+    .col-centered{
+        float: none;
+        margin: 0 auto;
     }
 }
