@@ -666,4 +666,12 @@ ul.tab-list li a span{
         font-size: 40px;
         box-shadow: 6px 6px 16px #333;
     }
+    .segundaSeccion .titulo {
+        font-size: 76px;
+        padding-top: 90px;
+    }
+    .segundaSeccion .subtitulo {
+        font-size: 45px;
+        line-height: 55px;
+    }
 }
