@@ -638,7 +638,7 @@ ul.tab-list li a span{
 ==================================================*/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 374px) {
+@media (max-width: 576px) {
     .logoP {
         width: 400px;
         display: block;
