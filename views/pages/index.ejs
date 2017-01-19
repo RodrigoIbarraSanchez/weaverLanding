@@ -48,7 +48,7 @@
                       <h4 class="lineaTexto">Weaver te presenta nuevas personas al contestar <br> preguntas y quizzes de forma anónima.</h4>
                       <div class="row">
                           <div class="col-md-12 col-xs-12">
-                              <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo btn-responsivo btn-DemoRes" data-target="#demo">DEMO</button>
+                              <a type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo btn-responsivo btn-DemoRes" href="#demo">DEMO</a>
                               <!--<button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 20px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>-->
                               <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login btn-responsivo" style="margin-top: 20px;">COMENZAR A CONECTAR</button>
                           </div>
@@ -464,7 +464,7 @@
                   </div>
               </form -->
               <!-- INICIO DEL QUIZ -->
-              <div ng-controller="controladorPadre" class="container">
+              <div ng-controller="controladorPadre" class="container" id="demo">
                   <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActivo || list.quizMetrics.resultadosActivos" style="text-align:center">
                       <button class="btn btn-default btn-round-lg btn-lg btn-download btn-responsivo" ng-click="list.activarQuiz()"><strong>Empezar Quiz</strong></button>
                   </div>
