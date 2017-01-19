@@ -679,7 +679,7 @@ ul.tab-list li a span{
     }
 }
 .auth0-lock.auth0-lock .auth0-lock-header {
-    background: rgba(0, 161, 191, 0.85)!important;
+    rgba(255, 255, 255, 0.85)!important
 }
 .auth0-lock.auth0-lock .auth0-lock-close-button, .auth0-lock.auth0-lock .auth0-lock-back-button {
     background: white!important;
@@ -816,7 +816,7 @@ ul.tab-list li a span{
     .cuartaSeccion .titulo {
         font-size: 28px;
         margin-bottom: 5px!important;
-        margin-top: 35px;
+        margin-top: 65px;
     }
     .imgPQW {
         width: 80px;
