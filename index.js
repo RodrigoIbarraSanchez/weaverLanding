@@ -21,6 +21,10 @@ app.get('/dashboard', auth0Valerio.middlware.requiresLogin, function(req, res) {
     res.render('pages/thanks');
 });
 
+app.get('/usuarios', auth0Valerio.middlware.requiresLogin, function (req, res) {
+    res.json(res.locals.user);
+});
+
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
