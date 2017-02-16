@@ -236,7 +236,7 @@
                     respuesta: "Coffe"
                 },
                 {
-                    respuesta: "Te"
+                    respuesta: "Tea"
                 },
                 {
                     respuesta: "Hot Chocolate"
