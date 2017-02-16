@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+    <script type="text/javascript">var _kmq = _kmq || [];
+        var _kmk = _kmk || '5611d4ffcce70e9914da42dbcc8731733bf63cc5';
+        function _kms(u){
+            setTimeout(function(){
+                var d = document, f = d.getElementsByTagName('script')[0],
+                    s = d.createElement('script');
+                s.type = 'text/javascript'; s.async = true; s.src = u;
+                f.parentNode.insertBefore(s, f);
+            }, 1);
+        }
+        _kms('//i.kissmetrics.com/i.js');
+        _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js"></script>
+    <script src="https://cdn.auth0.com/js/lock/10.9.1/lock.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+
+    <link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css">
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+  <div class="headerBG">
+      <div class="logoPrincipal">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-xs-5">
+
+                  </div>
+                  <div class="col-xs-12 col-md-12">
+                      <img class="logoP" src="https://s29.postimg.org/72hl4uwon/logo.png" alt="Weaver">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="propuestaValor">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-xs-12">
+                      <h1 class="pb">Create Meaningful connections</h1>
+                      <h4 class="lineaTexto">Weaver introduces you to new people by answering<br> anonymous questions and quizzes.</h4>
+                      <div class="row">
+                          <div class="col-md-12 col-xs-12">
+                              <a type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo btn-responsivo btn-DemoRes" href="#demo">Quick Demo</a>
+                              <!--<button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 20px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>-->
+                              <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login btn-responsivo" style="margin-top: 20px;">Start Weaving</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!--div class="modal fade" id="modalInicio" tabindex="-1" role="dialog" aria-labelledby="myModallabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="border: 2px solid black; border-radius: 15px;width: 25px;height: 25px;">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 style="text-align: center; font-family: 'Raleway'; color: gray; margin-bottom: 30px;">Crea una cuenta y empieza a conectar.</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
+                                <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
+                            <!--/div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="mail" placeholder="Mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                            </div>
+                            <button type="submit" class="btn btnModal btn-login">Comenzar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div-->
+
+      </div>
+      <div class="container">
+          <!--button type="button" class="btn btn-primary btn-round-lg btn-lg btn-demo">DEMO</button-->
+          <i class="fa fa-angle-down fa-5x" aria-hidden="true"></i>
+      </div>
+  </div>
+  <div class="segundaSeccion">
+    <div class="container">
+        <h1 class="titulo">¿ What is <span class="customFont">weaver</span> ?</h1>
+        <p class="subtitulo">Weaver is a platform that lets you meet people through anonymous questions. It becomes a real blind-dating experience where answers speak louder than profile pictures.</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    jQuery(window).load(function() {
+        jQuery('#features-slider.tab-slider-container .flexslider').flexslider({
+            animation: "slide",
+            slideshowSpeed: 15000,
+            animationSpeed: 1500,
+            namespace: "flex-",
+            controlNav: true,
+            directionNav: false,
+            smoothHeight: false,
+            animationLoop: true,
+            slideshow: true,
+            easing: "swing",
+            sync: "#features-iphone-slider.flex-slider-container .flexslider",
+            manualControls: "#features-slider .tab-list li a",
+            controlsContainer: "#features-slider .tab-list"
+        })
+    });
+
+  jQuery(document).ready(function($) {
+    jQuery('#features-iphone-slider.flex-slider-container .flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: 15000,
+        animationSpeed: 1500,
+        namespace: "flex-",
+        pauseOnAction: false,
+        pauseOnHover: false,
+        controlNav: false,
+        directionNav: false,
+        direction: "horizontal",
+        prevText: "<span class=\"icon-angle-left\"></span>",
+        nextText: "<span class=\"icon-angle-right\"></span>",
+        smoothHeight: false,
+        animationLoop: true,
+        slideshow: true,
+        easing: "swing",
+        controlsContainer: "#features-iphone-slider.flex-slider-container"
+    })
+  });
+</script>
+
+  <div class="tercerSeccion" style="background: none; background-color:#F4F4F4;">
+    <div class="container">
+        <div class="row">
+            <div class="text-content">
+                <h1 style="margin: 0 50px 60px 30px;" class="cfTitulo">How It works?</h1>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="container">
+                        <div class="row">
+                            <div id="features-slider" class="tab-slider-container">
+                                <div class="col-sm-12">
+                                    <ul class="tab-list">
+                                        <li>
+                                            <a href="#0">
+                                                <img src="img/slider/1.png" alt="Crea">
+                                                <span class="tab-title">Tailor</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#1">
+                                                <img src="img/slider/2.png" alt="Crea">
+                                                <span class="tab-title">Throw</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#2">
+                                                <img src="img/slider/3.png" alt="Crea">
+                                                <span class="tab-title">Weave</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#3">
+                                                <img src="img/slider/4.png" alt="Crea">
+                                                <span class="tab-title">Chat</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#4">
+                                                <img src="img/slider/5.png" alt="Crea">
+                                                <span class="tab-title">Connect</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-7 col-sm-12">
+                                    <div class="flexslider">
+                                        <ul class="slides">
+                                            <li>
+                                                <div class="sixcol">
+                                                    <div class="big">
+                                                        Create your profile by answering questions and fun quizzes.
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="sixcol last">
+                                                    Questions will pop everyday. The more you answer, the better we get to know you.
+                                                    <br>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <div class="sixcol">
+                                                    <div class="big">
+                                                        Ask anything you’d like to know about that special someone.
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="sixcol last">
+                                                    We’ll select 3 different weaver and they will answer it.
+                                                    <br>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <div class="sixcol">
+                                                    <div class="big">
+                                                        Receive the answers and start weaving with those you like the most.
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="sixcol last">
+                                                    Get to know each other in a more meaningful way.
+                                                    <br>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <div class="sixcol">
+                                                    <div class="big">
+                                                        Finally get to see who you’ve been talking to the whole time.
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="sixcol last">
+                                                    The channel is open so you can talk heart to heart.
+                                                    <br>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <div class="sixcol">
+                                                    <div class="big">
+                                                        Enjoy a special deal exclusively thought for you both.
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="sixcol last">
+                                                    We encourage you to take one step forward to meet in person.
+                                                    <br>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <br>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="iphone-slider-container" style="margin-top: -160px">
+                        <img src="img/iphone.png" alt="" class="iphone">
+                        <div id="features-iphone-slider" class="flex-slider-container">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="img/slider/Landing_screens-01.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="img/slider/Landing_screens-02.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="img/slider/Landing_screens-03.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="img/slider/Landing_screens-04.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="img/slider/Landing_screens-05.jpg" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+    <!--div class="tercerSeccion">
+        <div class="container">
+            <h1 class="titulo">¿Cómo funciona?</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active text-center">
+                                    <h3 class="pasos">1. CREA</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">2. ARROJA</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">3. TEJE</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">4. CHAT</h3>
+                                </a>
+                                <a href="#" class="list-group-item text-center">
+                                    <h3 class="pasos">5. CONECTA</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                            <!-- flight section -->
+                            <!--div class="bhoechie-tab-content active">
+                                <center style="border-right: 22px solid #215C92">
+                                    <h3 style="margin-top: 0;">Crea tu perfil al ir contestando
+                                        diferentes preguntas y quizzes.
+                                        <br><br>
+                                        Las preguntas aparecerán día con día. Entre más contestes, más completo estará tu perfil.
+                                    </h3>
+                                </center>
+                            </div>
+                            <!-- train section -->
+                            <!--div class="bhoechie-tab-content">
+                                <center style="margin-top: 120px;border-right: 22px solid #3B669D">
+                                    <h3 style="margin-top: 0;">
+                                        Pregunta aquello que te gustaría saber sobre esa persona especial.
+                                        <br><br>
+                                        Seleccionamos a 3 weavers diferentes para que la contesten.
+                                    </h3>
+                                </center>
+                            </div>
+
+                            <!-- hotel search -->
+                            <!--div class="bhoechie-tab-content">
+                                <center style="margin-top: 240px;border-right: 22px solid #5670A9">
+                                    <h3 style="margin-top: 0;">
+                                        Elige las respuestas que más te gusten y comienza a tejer hilos que te acerquen a esa persona especial.
+                                        <br><br>
+                                        Conózcanse de una forma más
+                                        profunda y honesta.</h3>
+                                </center>
+                            </div>
+                            <div class="bhoechie-tab-content">
+                                <center style="margin-top: 330px;border-right: 22px solid #8680BC">
+                                    <h3 style="margin-top: 0;">
+                                        Cuando hayas elegido a esa persona especial podrán hablar directamente.
+                                        <br><br>
+                                        Al fin podrás ver  con quién has estado compartiendo todo este tiempo.</h3>
+                                </center>
+                            </div>
+                            <div class="bhoechie-tab-content">
+                                <center style="margin-top: 440px;border-right: 22px solid #BB98D8">
+                                    <h3 style="margin-top: 0;">Disfruta de una promoción pensada
+                                        exclusivamente para ustedes dos.
+                                        <br><br>
+                                        Los invitamos a que se conozcan en un lugar donde sabemos que lo disfrutarán.</h3>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div-->
+
+  <div class="cuartaSeccion">
+    <div class="container">
+        <h1 class="titulo">Our Perks</h1>
+    </div>
+    <div class="container centrado">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 PQW" style="margin-bottom: 40px">
+                <img class="imgPQW" src="https://s28.postimg.org/ocpy48h1p/icono1.png" alt="">
+                <h3>Fun Questions</h3>
+                <h4 style="color: black" class="separacion">Stop wasting time on standard forms that doesn’t express who you really are.</h4>
+                <p class="separacion segundoT">Our questions and quizzes discover the best of you, they let us know who you’re looking for.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 PQW" style="margin-bottom: 40px">
+                <img class="imgPQW" src="https://s27.postimg.org/pavf84qgz/icono2.png" alt="">
+                <h3>Blind dating experience</h3>
+                <h4 style="color: black" class="separacion">Just be yourself, connect in a more authentic and natural way.</h4>
+                <p class="separacion segundoT">Live a true blind-dating experience. Share and go deep with someone without any prejudice.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 PQW" style="margin-bottom: 40px">
+                <img class="imgPQW" src="https://s23.postimg.org/xd1950biz/icono3.png" alt="">
+                <h3>No more swiping</h3>
+                <h4 style="color: black" class="separacion">Stop collecting meaningless matches and focus on people who truly care.</h4>
+                <p class="separacion segundoT">The best of each person lays in the inside, take the time to discover it.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12 PQW">
+                <img class="imgPQW" src="https://s30.postimg.org/777aho69d/icono4.png" alt="">
+                <h3>Match nearby</h3>
+                <h4 style="color: black" class="separacion">Get in touch with people nearby, this time with no filters.</h4>
+                <p class="separacion segundoT">You never know who you may find, an excellent friend or something else. You’ll be surprised.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 PQW">
+                <img class="imgPQW" src="https://s29.postimg.org/cacx7o0qv/icono5.png" alt="">
+                <h3>Take it to the real world</h3>
+                <h4 style="color: black" class="separacion">Enjoy special deals and offers in places near you where you might have a first date.</h4>
+                <p class="separacion segundoT">It’s our way to celebrate that you found each other.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 PQW">
+                <img class="imgPQW" src="https://s24.postimg.org/t71px265h/icono6.png" alt="">
+                <h3>No undesired attention</h3>
+                <h4 style="color: black" class="separacion">Weaver’s interaction won’t be attractive to people who are looking for a fling.</h4>
+                <p class="separacion segundoT">Remember that good things take time.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="quintaseccion" ng-app="demoQuiz" id="demo">
+      <h1 class="titulo"></h1>
+      <div class="container-fluid centrado">
+          <div class="row">
+              <!--form action="">
+                  <label class=" btn-round-lg btn-lg btn-pregunta" for="">¿Qué tomarías en una mañana lluviosa?</label>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-2">
+
+                          </div>
+                          <div class="col-md-4">
+                              <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-option">Café</button>
+                          </div>
+                          <div class="col-md-4">
+                              <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-option">Té</button>
+                          </div>
+                          <div class="col-md-2">
+
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-2">
+
+                          </div>
+                          <div class="col-md-4">
+                              <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-option">Chocolate caliente</button>
+                          </div>
+                          <div class="col-md-4">
+                              <button type="button" class="btn btn-primary btn-round-lg btn-lg btn-option">Vodka</button>
+                          </div>
+                          <div class="col-md-2">
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="container">
+                      <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download-demo">COMENZAR A CONECTAR</button>
+                  </div>
+              </form -->
+              <!-- INICIO DEL QUIZ -->
+              <div ng-controller="controladorPadre" class="container" id="demo">
+                  <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActivo || list.quizMetrics.resultadosActivos" style="text-align:center">
+                      <button class="btn btn-default btn-round-lg btn-lg btn-download btn-responsivo" ng-click="list.activarQuiz()"><strong>Start Weaving</strong></button>
+                  </div>
+                  <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActivo">
+                      <div class="row row-centered">
+                          <div class="col-md-12 col-sm-12">
+                              <div class="btn-toolbar">
+                                  <button ng-repeat="pregunta in quiz.dataService.preguntasQuiz" ng-class="{'circulo-respondido':pregunta.selected !== null, 'circulo':pregunta.selected === null}" ng-click="quiz.ponerPreguntaActiva($index)">
+                                      <!--span ng-class="{'circulo': pregunta.selected !== null, 'glyphicon-question-sign': pregunta.selected === null}"></span-->
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="alert alert-danger" ng-show="quiz.error">
+                              ¡Ups! It looks like something is wrong.
+                              <button class="close" ng-click="quiz.error = false">&times</button>
+                          </div>
+                          <div ng-hide="quiz.finalizar">
+                              <div class="row">
+                                  <div class="col-xs-12">
+                                      <!-- PREGUNTA --><h4 class="btn-round-lg btn-lg btn-pregunta">{{quiz.preguntaActiva+1 + ". " + quiz.dataService.preguntasQuiz[quiz.preguntaActiva].text}}</h4>
+                                      <div class="row" ng-if="quiz.dataService.preguntasQuiz[quiz.preguntaActiva].type === 'text'">
+                                          <div class="col-sm-12 col-md-3 col-md-offset-2" ng-repeat="respuesta in quiz.dataService.preguntasQuiz[quiz.preguntaActiva].posibilidades">
+                                              <!-- RESPUESTA --><div class="respuesta btn btn-primary btn-round-lg btn-lg btn-option btn-responsivo2" ng-class="{'bg-info': $index === quiz.dataService.preguntasQuiz[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
+                                                  <span>{{respuesta.respuesta}}</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row" ng-if="quiz.dataService.preguntasQuiz[quiz.preguntaActiva].type === 'image'" style="margin-top: 60px">
+                                          <div class="col-xs-6 col-md-3" ng-repeat="respuesta in quiz.dataService.preguntasQuiz[quiz.preguntaActiva].posibilidades">
+                                              <div class="respuestaConImagen" ng-class="{'imagen-seleccionada': $index === quiz.dataService.preguntasQuiz[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
+                                                  <img ng-src="{{respuesta.respuesta}}">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="well well-sm" ng-show="quiz.finalizar" style="background: transparent!important; border: none">
+                              <div class="row">
+                                  <div class="col-xs-12">
+                                      <h3 style="text-align: center" class="preguntaFinalDemo">Are you sure you want to send your answers?</h3>
+                                      <button class="botonesSiNo btn btn-primary btn-round-lg btn-lg btn-option btn-responsivo3" ng-click="quiz.finalizarRespuestas();">Yes</button>
+                                      <button class="botonesSiNo dange btn btn-primary btn-round-lg btn-lg btn-option btn-responsivo3" ng-click="quiz.finalizar = false">No</button>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div> <!-- Row de preguntas-->
+                  </div> <!-- Quiz controller -->
+                  <div ng-controller="resultadosCtrl as resultados" ng-show="resultados.quizMetrics.resultadosActivos">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-sm-12 col-md-3" style="float: none; margin: 0 auto;">
+                                  <p class="mensaje">{{texto}}</p>
+                              </div>
+                              <div class="col-sm-12 col-md-6" style="float: none; margin: 0 auto;">
+                                  <p class="mensajeDos"><strong>You are very close to finding the right one.</strong></p>
+                              </div>
+                          </div>
+                          <!--<button type="button" class="btn btn-default btn-round-lg btn-lg btn-download" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">COMENZAR A CONECTAR</button>-->
+                          <button type="button" class="btn btn-default btn-round-lg btn-lg btn-download btn-login btnAQ" style="margin-top: 200px;" data-toggle="modal" data-target="#modalInicio">Start Weaving</button>
+                          <!--div class="row">
+                              <button class="btn btn-primary btn.lg" ng-click="resultados.reset()">Regresar</button>
+                          </div-->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer>
+      <img class="logoFooter" src="https://s28.postimg.org/ealgi15nh/logo_White.png" alt="">
+      <p>Coming soon</p>
+      <img src="https://s30.postimg.org/xnc7jqx75/app_Store_Logo.png" alt="">
+      <img src="https://s28.postimg.org/4g8ddzll9/Google_Play_Logo.png" alt="">
+      <div class="container footerNav">
+          <a href="">BLOG</a>
+          <a href="">PRIVACY</a>
+          <a href="">TERMS</a>
+          <a href="">SAFETY</a>
+          <a href="">CONTACT US</a>
+      </div>
+  </footer>
+
+  <script>
+      $(document).ready(function() {
+          $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+              e.preventDefault();
+              $(this).siblings('a.active').removeClass("active");
+              $(this).addClass("active");
+              var index = $(this).index();
+              $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+              $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+          });
+      });
+  </script>
+
+  <script>
+      $(document).ready(function() {
+
+          var port = ''
+          if (location.port.length === 4)
+              port = ':'+location.port
+
+
+          var lock = new Auth0Lock('4ceBlUH076OKGR4mANDbqyHKDAQOwdIu', 'rodrigoibarra.auth0.com', {
+              auth: {
+                  redirectUrl: location.protocol+'//'+location.hostname+port+'/callback',
+                  responseType: 'code',
+                  params: {
+                      scope: 'openid email'
+                  }
+              },
+              theme: {
+                  logo: 'https://s29.postimg.org/72hl4uwon/logo.png',
+                  primaryColor: 'rgb(0,161,191)'
+              },
+              language: 'es',
+              languageDictionary: {
+                  emailInputPlaceholder: "ejemplo@tuemail.com",
+                  emailPasswordPlaceholder: "tu contraseña",
+                  title: ""
+              }
+          })
+
+          $('.btn-login').click(function(e) {
+              e.preventDefault()
+              lock.show()
+          })
+
+      })
+  </script>
+
+  <script src="https://cdn.auth0.com/js/lock/10.8.0/lock.min.js"></script>
+  
+</body>
+</html>
