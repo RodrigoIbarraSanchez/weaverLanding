@@ -472,7 +472,7 @@
                       <div class="row row-centered">
                           <div class="col-md-12 col-sm-12">
                               <div class="btn-toolbar">
-                                  <button ng-repeat="pregunta in quiz.dataService.preguntasQuiz" ng-class="{'circulo-respondido':pregunta.selected !== null, 'circulo':pregunta.selected === null}" ng-click="quiz.ponerPreguntaActiva($index)">
+                                  <button ng-repeat="pregunta in quiz.dataService.questions" ng-class="{'circulo-respondido':pregunta.selected !== null, 'circulo':pregunta.selected === null}" ng-click="quiz.ponerPreguntaActiva($index)">
                                       <!--span ng-class="{'circulo': pregunta.selected !== null, 'glyphicon-question-sign': pregunta.selected === null}"></span-->
                                   </button>
                               </div>
@@ -486,17 +486,17 @@
                           <div ng-hide="quiz.finalizar">
                               <div class="row">
                                   <div class="col-xs-12">
-                                      <!-- PREGUNTA --><h4 class="btn-round-lg btn-lg btn-pregunta">{{quiz.preguntaActiva+1 + ". " + quiz.dataService.preguntasQuiz[quiz.preguntaActiva].text}}</h4>
-                                      <div class="row" ng-if="quiz.dataService.preguntasQuiz[quiz.preguntaActiva].type === 'text'">
-                                          <div class="col-sm-12 col-md-3 col-md-offset-2" ng-repeat="respuesta in quiz.dataService.preguntasQuiz[quiz.preguntaActiva].posibilidades">
-                                              <!-- RESPUESTA --><div class="respuesta btn btn-primary btn-round-lg btn-lg btn-option btn-responsivo2" ng-class="{'bg-info': $index === quiz.dataService.preguntasQuiz[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
+                                      <!-- PREGUNTA --><h4 class="btn-round-lg btn-lg btn-pregunta">{{quiz.preguntaActiva+1 + ". " + quiz.dataService.questions[quiz.preguntaActiva].text}}</h4>
+                                      <div class="row" ng-if="quiz.dataService.questions[quiz.preguntaActiva].type === 'text'">
+                                          <div class="col-sm-12 col-md-3 col-md-offset-2" ng-repeat="respuesta in quiz.dataService.questions[quiz.preguntaActiva].posibilidades">
+                                              <!-- RESPUESTA --><div class="respuesta btn btn-primary btn-round-lg btn-lg btn-option btn-responsivo2" ng-class="{'bg-info': $index === quiz.dataService.questions[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
                                                   <span>{{respuesta.respuesta}}</span>
                                               </div>
                                           </div>
                                       </div>
-                                      <div class="row" ng-if="quiz.dataService.preguntasQuiz[quiz.preguntaActiva].type === 'image'" style="margin-top: 60px">
-                                          <div class="col-xs-6 col-md-3" ng-repeat="respuesta in quiz.dataService.preguntasQuiz[quiz.preguntaActiva].posibilidades">
-                                              <div class="respuestaConImagen" ng-class="{'imagen-seleccionada': $index === quiz.dataService.preguntasQuiz[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
+                                      <div class="row" ng-if="quiz.dataService.questions[quiz.preguntaActiva].type === 'image'" style="margin-top: 60px">
+                                          <div class="col-xs-6 col-md-3" ng-repeat="respuesta in quiz.dataService.questions[quiz.preguntaActiva].posibilidades">
+                                              <div class="respuestaConImagen" ng-class="{'imagen-seleccionada': $index === quiz.dataService.questions[quiz.preguntaActiva].selected}" ng-click="quiz.respuestaSeleccionada($index); quiz.preguntaRespondida()">
                                                   <img ng-src="{{respuesta.respuesta}}">
                                               </div>
                                           </div>

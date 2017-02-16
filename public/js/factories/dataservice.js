@@ -9,6 +9,7 @@
 
         var dataObj = {
             preguntasQuiz: preguntasQuiz,
+            questions: questions,
             respuestasCorrectas: respuestasCorrectas,
             respOpcionUno: respOpcionUno
         };
@@ -217,6 +218,211 @@
                 },
                 {
                     respuesta: "Cine"
+                }
+            ],
+            selected: null,
+            correct: null
+        }
+
+    ];
+
+    var questions  = [
+
+        {
+            type: "text",
+            text: "What would you take on a rainy morning?",
+            posibilidades: [
+                {
+                    respuesta: "Coffe"
+                },
+                {
+                    respuesta: "Te"
+                },
+                {
+                    respuesta: "Hot Chocolate"
+                },
+                {
+                    respuesta: "Vodka"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "What do you prefer to do on a weekend?",
+            posibilidades: [
+                {
+                    respuesta: "Netflix all day"
+                },
+                {
+                    respuesta: "Food with your friends"
+                },
+                {
+                    respuesta: "Cultural exhibition"
+                },
+                {
+                    respuesta: "What is a weekend?"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "image",
+            text: "What animal would you have as a pet?",
+            posibilidades: [
+                {
+                    respuesta: "http://nexo-cdn.nexofin.com/archivos/2016/07/tigre.jpg"
+                },
+                {
+                    respuesta: "https://media.apnarm.net.au/img/media/images/2016/05/02/b88110857z1_20160502153202_000ge55bbe13-0-erx6eq7q8wmv56g15m2_fct609x453x93_ct620x465.jpg"
+                },
+                {
+                    respuesta: "http://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS-large_trans++eo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg"
+                },
+                {
+                    respuesta: "http://www.animalesextremos.com/Imagenes/tucan-animal-mas-caro-del-mundo.jpg"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Where would you live for a whole month?",
+            posibilidades: [
+                {
+                    respuesta: "Island"
+                },
+                {
+                    respuesta: "Forest"
+                },
+                {
+                    respuesta: "Jungle"
+                },
+                {
+                    respuesta: "Desert"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "If you could have dinner with a person, who would it be?",
+            posibilidades: [
+                {
+                    respuesta: "Barack Obama"
+                },
+                {
+                    respuesta: "Steve Jobs"
+                },
+                {
+                    respuesta: "Walt Disney"
+                },
+                {
+                    respuesta: "Sigmund Freud"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "If you had a superpower what would it be?",
+            posibilidades: [
+                {
+                    respuesta: "Fly"
+                },
+                {
+                    respuesta: "Invisibility"
+                },
+                {
+                    respuesta: "Teleportation"
+                },
+                {
+                    respuesta: "X-ray vision"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "What smell do you enjoy the most?",
+            posibilidades: [
+                {
+                    respuesta: "Wet earth"
+                },
+                {
+                    respuesta: "Fresh coffee"
+                },
+                {
+                    respuesta: "Christmas tree"
+                },
+                {
+                    respuesta: "Freshly baked pizza"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "What do you do in an afternoon after work?",
+            posibilidades: [
+                {
+                    respuesta: "Read"
+                },
+                {
+                    respuesta: "Sleep"
+                },
+                {
+                    respuesta: "Excercise"
+                },
+                {
+                    respuesta: "TV"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Favorite moment of the day?",
+            posibilidades: [
+                {
+                    respuesta: "Early morning"
+                },
+                {
+                    respuesta: "Morning"
+                },
+                {
+                    respuesta: "Day"
+                },
+                {
+                    respuesta: "Night"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Favorite art type?",
+            posibilidades: [
+                {
+                    respuesta: "Literature"
+                },
+                {
+                    respuesta: "Painting"
+                },
+                {
+                    respuesta: "Music"
+                },
+                {
+                    respuesta: "Cinema"
                 }
             ],
             selected: null,

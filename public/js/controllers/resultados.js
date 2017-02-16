@@ -4,10 +4,15 @@
         .module("demoQuiz")
         .controller("controladorPadre", ['$scope', 'quizMetrics', 'DataService',
             function($scope, quizMetrics, DataService){
-            
+
             $scope.$on('resultadosEnviados', function (evt, args) {
                 console.log('Ya se enviaron los resultados');
                 $scope.$broadcast('mostrarResultados');
+            });
+
+            $scope.$on('resultadosEnviadosEn', function (evt, args) {
+                console.log('Ya se enviaron los resultados');
+                $scope.$broadcast('mostrarResultadosEn');
             });
 
         }])
@@ -38,6 +43,14 @@
                 })
             });
 
+            $scope.$on('mostrarResultadosEn', function (evt, args) {
+                console.log('Ya se deben mostrar los resultados en pantalla');
+                quizMetrics.opcionEn(function(texto) {
+                    $scope.texto = texto;
+                    console.log('Respuestas Correctas: ', quizMetrics.respuestasCorrectas);
+                })
+            });
+
             var dq = this;
 
             dq.quizMetrics = quizMetrics;
@@ -48,15 +61,15 @@
             dq.calcularPorcentaje = calcularPorcentaje;
             dq.preguntaActiva = 0;
             dq.$scope = $scope;
-            
+
             function calcularPorcentaje() {
                 return quizMetrics.numCorrect / DataService.preguntasQuiz.length * 100;
             }
-            
+
             function ponerPreguntaActiva(index) {
                 dq.preguntaActiva = index;
             }
-            
+
             function getAnswerClass(index) {
                 if(index === quizMetrics.respuestasCorrectas[dq.preguntaActiva]){
                     return "bg-success";
@@ -160,6 +173,7 @@
 
                 console.log('Aquí se emite hacia el controlador padre cuando ya se enviaron las respuestas');
                 $scope.$emit('resultadosEnviados');
+                $scope.$emit('resultadosEnviadosEn');
 
             }
         }])
